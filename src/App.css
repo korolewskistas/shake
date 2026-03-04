@@ -13,6 +13,18 @@
   --purple: #9d4edd;
 }
 
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.video-container iframe {
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+}
+
 * {
   margin: 0;
   padding: 0;

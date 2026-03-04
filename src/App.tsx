@@ -3,19 +3,10 @@ import './App.css'
 
 function App() {
   const [activeTab, setActiveTab] = useState('home')
-  const audioRef = useRef<HTMLAudioElement>(null)
   const heroRef = useRef<HTMLElement>(null)
   const targetPos = useRef({ x: 0, y: 0 })
   const currentPos = useRef({ x: 0, y: 0 })
   const [renderPos, setRenderPos] = useState({ x: 0, y: 0 })
-
-  useEffect(() => {
-    const audio = audioRef.current
-    if (audio) {
-      audio.volume = 0.3
-      audio.play().catch(() => {})
-    }
-  }, [])
 
   useEffect(() => {
     let animationId: number
@@ -66,6 +57,17 @@ function App() {
               <div className="hero-badge">Classic MMORPG</div>
               <h1>Lineage 2</h1>
               <p className="subtitle">Возрождение легенды</p>
+              <div className="video-container">
+                <iframe 
+                  width="876" 
+                  height="392" 
+                  src="https://www.youtube.com/embed/EKhShKU9O-I" 
+                  title="Lineage 2 Trailer" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                ></iframe>
+              </div>
               <p className="hero-desc">
                 Присоединяйся к тысячам игроков в эпическом фэнтези мире.<br/>
                 Выбери свой путь: стань героем или завоевателем.
@@ -207,11 +209,7 @@ function App() {
 
   return (
     <div className="app">
-      <audio ref={audioRef} src="https://ru.savefrom.net/33/-/watch?v=b0WhanepVRA" loop />
       <header className="header">
-        <div className="logo">
-          <img src="/lineage-2-logo.png" alt="L2" className="logo-img" />
-        </div>
         <nav className="nav">
           <button className={activeTab === 'home' ? 'active' : ''} onClick={() => setActiveTab('home')}>Главная</button>
           <button className={activeTab === 'news' ? 'active' : ''} onClick={() => setActiveTab('news')}>Новости</button>
