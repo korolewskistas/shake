@@ -58,15 +58,9 @@ function App() {
               <h1>Lineage 2</h1>
               <p className="subtitle">Возрождение легенды</p>
               <div className="video-container">
-                <iframe 
-                  width="876" 
-                  height="392" 
-                  src="https://www.youtube.com/embed/EKhShKU9O-I" 
-                  title="Lineage 2 Trailer" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen
-                ></iframe>
+                <video width="876" height="392" controls playsInline>
+                  <source src="./main.mp4" type="video/mp4" />
+                </video>
               </div>
               <p className="hero-desc">
                 Присоединяйся к тысячам игроков в эпическом фэнтези мире.<br/>
