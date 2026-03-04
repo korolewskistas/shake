@@ -61,7 +61,7 @@ function App() {
                 <iframe 
                   width="876" 
                   height="392" 
-                  src="https://www.youtube.com/embed/EKhShKU9O-I?autoplay=1&mute=1" 
+                  src="https://www.youtube.com/embed/EKhShKU9O-I?autoplay=1" 
                   title="Lineage 2 Trailer" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
