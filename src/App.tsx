@@ -209,7 +209,7 @@ function App() {
     <div className="app">
       <header className="header">
         <div className="logo">
-          <img src="/lineage-2-logo.png" alt="Lineage 2" className="logo-img" />
+          <img src="./lineage-2-logo.png" alt="Lineage 2" className="logo-img" />
         </div>
         <nav className="nav">
           <button className={activeTab === 'home' ? 'active' : ''} onClick={() => setActiveTab('home')}>Главная</button>
