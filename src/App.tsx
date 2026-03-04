@@ -59,7 +59,7 @@ function App() {
               <p className="subtitle">Возрождение легенды</p>
               <div className="video-container">
                 <iframe 
-                  src="https://www.youtube.com/embed/EKhShKU9O-I?autoplay=1" 
+                  src="https://www.youtube.com/embed/EKhShKU9O-I?autoplay=1&mute=1" 
                   title="Lineage 2 Trailer" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
