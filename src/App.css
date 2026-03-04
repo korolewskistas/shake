@@ -18,9 +18,13 @@
   justify-content: center;
   align-items: center;
   margin: 20px 0;
+  width: 100%;
 }
 
 .video-container iframe {
+  width: 80%;
+  max-width: 876px;
+  aspect-ratio: 16 / 9;
   border-radius: 8px;
   box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
 }
