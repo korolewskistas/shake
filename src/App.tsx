@@ -57,15 +57,6 @@ function App() {
               <div className="hero-badge">Classic MMORPG</div>
               <h1>Lineage 2</h1>
               <p className="subtitle">Возрождение легенды</p>
-              <div className="video-container">
-                <iframe 
-                  src="https://www.youtube.com/embed/LECzr8ijvSU?autoplay=1&mute=1" 
-                  title="Lineage 2 Trailer" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen
-                ></iframe>
-              </div>
               <p className="hero-desc">
                 Присоединяйся к тысячам игроков в эпическом фэнтези мире.<br/>
                 Выбери свой путь: стань героем или завоевателем.
